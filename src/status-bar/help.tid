@@ -1,74 +1,74 @@
 title: $:/plugins/linonetwo/status-bar/help
 tags: $:/tags/StatusBar/Help
-caption: 状态栏使用帮助
+caption: Ayuda para el uso de la barra de estado
 
 \procedure lingo-base() $:/plugins/linonetwo/status-bar/language/
 
-! <<lingo Name>> 使用帮助
+! <<lingo Name>> Ayuda
 
-!! 基本用法
+!! Uso basico
 
-1. 浏览任何条目时，点击查看工具栏中的"添加到状态栏"按钮（或使用视图工具栏上的按钮）将其添加到状态栏。
-2. 添加 `$:/Tags/StatusBar/Item` 标签后，会自动显示超级标签编辑表单（需要安装 super-tag 插件），可以设置以下字段：
-   * `icon`：图标（可以使用 Emoji 或嵌入其他图片条目）
-   * `description`：鼠标悬浮时的提示文本
-   * `@status-bar/badge`（可选）：图标右上角的徽章文本，通常是数字
-   * `@status-bar/badgeBgColor`（可选）：徽章的背景颜色，默认是红色
-   * `@status-bar/click`（可选）：点击图标时的动作微件
-   * `@status-bar/shiftClick`（可选）：按住 Shift 键点击时的动作
-   * `@status-bar/altClick`（可选）：按住 Alt 键点击时的动作
+1. Mientras explora cualquier elemento, haga clic en en la barra de herramientas Ver."Agregar a la barra de estado"boton (o use el boton en la barra de herramientas de vista) para agregarlo a la barra de estado。
+2. Agregar `$:/Tags/StatusBar/Item` Despues de agregar una etiqueta, el formulario de edicion de super etiqueta se mostrara automaticamente (requiere instalacion super-tag Complemento), puede configurar los siguientes campos：
+   * `icon`：Iconos (se pueden utilizar Emoji O incrustar otras entradas de imagenes.）
+   * `description`：Mensaje de texto cuando el mouse esta sobre el cursor
+   * `@status-bar/badge`（Opcional): texto de la insignia en la esquina superior derecha del icono, generalmente un numero
+   * `@status-bar/badgeBgColor`（Opcional): El color de fondo de la insignia, el valor predeterminado es rojo
+   * `@status-bar/click`（Opcional): Widget de accion al hacer clic en el icono
+   * `@status-bar/shiftClick`（Opcional): Mantenga presionado Shift Accion al hacer clic en la tecla
+   * `@status-bar/altClick`（Opcional): Mantenga presionado Alt Accion al hacer clic en la tecla
 
-条目会自动显示在状态栏中。按住 Ctrl 键并点击图标可以将其从状态栏中移除。
+La entrada aparecera automaticamente en la barra de estado. Mantenga presionado Ctrl Haga clic con la tecla en un icono para eliminarlo de la barra de estado.。
 
-!! 高级用法
+!! Uso avanzado
 
-!!! 健康状态跟踪
+!!! Seguimiento del estado de salud
 
-可以创建一个条目用于跟踪健康状态，例如：
+Se puede crear una entrada para realizar un seguimiento del estado de salud, p.：
 
 ```
 tags: $:/Tags/StatusBar/Item
 icon: 🤒
-description: 感冒中，需要多喝水、多休息
+description: Cuando estas resfriado necesitas beber mas agua y descansar mas
 @status-bar/badge: 3
 @status-bar/badgeBgColor: #ff5555
-@status-bar/click: <$action-navigate $to="感冒记录"/>
+@status-bar/click: <$action-navigate $to="Registros frios"/>
 ```
 
-徽章中的数字可以表示剩余天数或严重程度等。
+Los numeros en la insignia pueden indicar la cantidad de dias restantes o la gravedad, etc.。
 
-!!! 番茄钟
+!!! Pomodoro
 
-可以配合定时器插件使用，创建一个番茄钟状态：
+Se puede utilizar con un complemento de temporizador para crear un estado Pomodoro.：
 
 ```
 tags: $:/Tags/StatusBar/Item
 icon: ⏱️
-description: 番茄钟 - 25:00
+description: Pomodoro - 25:00
 @status-bar/badge: 25
 @status-bar/badgeBgColor: #55aa55
-@status-bar/click: <$action-navigate $to="番茄钟"/>
+@status-bar/click: <$action-navigate $to="Pomodoro"/>
 ```
 
-然后在定时器代码中定期更新徽章数字。
+Luego actualice el numero de placa periodicamente en el codigo del temporizador.。
 
-!!! 游戏化奖励
+!!! Recompensas gamificadas
 
-可以创建一个游戏时间奖励状态：
+Puede crear un estado de recompensa de tiempo de juego.：
 
 ```
 tags: $:/Tags/StatusBar/Item
 icon: 🎮
-description: 游戏时间 - 剩余30分钟
+description: Tiempo de juego - Resto30minutos
 @status-bar/badge: 30
 @status-bar/badgeBgColor: #5555aa
-@status-bar/click: <$action-navigate $to="游戏奖励"/>
+@status-bar/click: <$action-navigate $to="Recompensas del juego"/>
 ```
 
-!! 配置选项
+!! Opciones de configuracion
 
-可以在控制面板中配置状态栏的显示位置和其他选项：
+Puede configurar la posicion de visualizacion y otras opciones de la barra de estado en el panel de control.：
 
-1. 打开控制面板（齿轮图标）
-2. 找到"RPG风格状态栏"选项
-3. 根据需要调整设置
+1. Abra el Panel de control (icono de engranaje）
+2. encontrar"RPGBarra de estado de estilo"Opciones
+3. Ajuste la configuracion segun sea necesario

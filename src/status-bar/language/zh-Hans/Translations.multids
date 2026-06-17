@@ -1,24 +1,24 @@
 title: $:/plugins/linonetwo/status-bar/language/zh-Hans/
 
-Name: RPG风格状态栏
-ShortName: 状态栏
-Description: RPG风格状态栏，用于重要笔记的状态显示，如健康状况、番茄钟和游戏化奖励。
-Configs/Description: 这些设置让你自定义「RPG风格状态栏」插件的行为。
-Button/AddToStatusBar: 添加到状态栏
-Button/RemoveFromStatusBar: 从状态栏移除
-Button/AddToStatusBar/Tooltip: 添加到状态栏
-Button/RemoveFromStatusBar/Tooltip: 从状态栏移除
-Config/ShowInSidebar: 在侧边栏中显示
-Config/AutoHideEmpty: 自动隐藏空的状态栏
-Config/Position/Top: 在页面顶部显示
-Config/Position/Sidebar: 在侧边栏中显示
-Config/Position/Both: 同时在顶部和侧边栏中显示
-Config/CustomStyles: 自定义样式
-Config/CustomStyles/IconSize: 图标大小
-Config/CustomStyles/IconGap: 图标间距
-Config/CustomStyles/BgOpacity: 背景透明度
-Config/CustomStyles/BgBlur: 背景模糊
-Config/CustomStyles/BorderRadius: 圆角大小
-Config/CustomStyles/Animation: 动画效果
-Config/OrderByField: 项目排序字段
-Button/AddNewItem: 添加新状态项
+Name: RPGBarra de estado de estilo
+ShortName: Barra de estado
+Description: RPGBarra de estado de estilo para mostrar el estado de notas importantes, como estado de salud, Pomodoro y recompensas de gamificacion.。
+Configs/Description: Estas configuraciones te permiten personalizar「RPGBarra de estado de estilo」Comportamiento de los complementos。
+Button/AddToStatusBar: Agregar a la barra de estado
+Button/RemoveFromStatusBar: Eliminar de la barra de estado
+Button/AddToStatusBar/Tooltip: Agregar a la barra de estado
+Button/RemoveFromStatusBar/Tooltip: Eliminar de la barra de estado
+Config/ShowInSidebar: Mostrar en la barra lateral
+Config/AutoHideEmpty: Ocultar automaticamente la barra de estado vacia
+Config/Position/Top: Mostrar en la parte superior de la pagina.
+Config/Position/Sidebar: Mostrar en la barra lateral
+Config/Position/Both: Mostrar tanto en la barra superior como en la lateral.
+Config/CustomStyles: Estilos personalizados
+Config/CustomStyles/IconSize: Tamano del icono
+Config/CustomStyles/IconGap: Espaciado de iconos
+Config/CustomStyles/BgOpacity: Transparencia de fondo
+Config/CustomStyles/BgBlur: Fondo borroso
+Config/CustomStyles/BorderRadius: Tamano del filete
+Config/CustomStyles/Animation: efectos de animacion
+Config/OrderByField: Campo de clasificacion de proyectos
+Button/AddNewItem: Agregar nuevos elementos de estado

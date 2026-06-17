@@ -6,7 +6,7 @@ position: sidebar
 customStyles: no
 orderByField: list-order
 
-# 自定义样式值
+# Valor de estilo personalizado
 customStyleValues/icon-size: 32px
 customStyleValues/icon-gap: 0.5em
 customStyleValues/background-opacity: 1

@@ -1,19 +1,19 @@
 title: $:/plugins/linonetwo/health-buff-debuff-tracker/changelog
 
-! 更新日志
+! Actualizar registro
 
 !! 1.7.4
-* 修复健康摘要里的 hyper-table 列定义渲染链，恢复减益、增益、身体状态三张表的正常显示
-* 为身体部位列补上共享的格式化逻辑与本地化表头，避免 Wikitext 变量直接进入 columns 解析导致表格失效
+* Reparar el resumen de salud. hyper-table Cadena de representacion de definicion de columna, que restaura la visualizacion normal de las tres tablas de desventaja, ganancia y estado del cuerpo.
+* Agregue logica de formato compartida y encabezados localizados a la columna de partes del cuerpo para evitar Wikitext Las variables entran directamente columns El analisis da como resultado un error en la tabla
 
 !! 1.7.1-1
-* 修复 GitHub Actions 中的 Playwright 浏览器安装与测试启动问题
-* 稳定 body map 与 body part diagram editor 的端到端测试流程
+* Arreglar GitHub Actions en Playwright Problemas de instalacion del navegador y de inicio de prueba
+* Estable body map Con body part diagram editor Proceso de prueba de un extremo a otro
 
 !! 1.7.0
-* 移除旧的 Body Map Editor，并将控制面板入口切换到新的 Body Part Diagram Editor
-* 新的开发者编辑器支持一体化流程：选择图片条目、在浏览器中生成区域点位、拖点微调并保存回图片条目
-* 更新 body map 的 Playwright 测试，覆盖选图、生成、编辑和保存流程
+* Quitar el viejo Body Map Editor，Y cambie la entrada del panel de control a la nueva Body Part Diagram Editor
+* El nuevo editor para desarrolladores admite un proceso integrado: seleccione elementos de imagen, genere puntos de area en el navegador, arrastre, ajuste y guarde nuevamente en los elementos de imagen.
+* Actualizacion body map de Playwright Prueba, que abarca los procesos de seleccion, generacion, edicion y guardado de imagenes.
 
 !! 1.6.1
-* 现有发布版本
+* Lanzamientos existentes

@@ -3,7 +3,7 @@
     "title": "$:/Tags/StatusBar/Item",
     "color": "#bf8dfa",
     "icon": "$:/plugins/linonetwo/status-bar/icons/status-bar-icon",
-    "description": "标记要在状态栏中显示的条目",
+    "description": "Marque los elementos que se mostraran en la barra de estado.",
     "tags": "$:/SuperTag/TraitTag",
     "schema": {
       "type": "object",

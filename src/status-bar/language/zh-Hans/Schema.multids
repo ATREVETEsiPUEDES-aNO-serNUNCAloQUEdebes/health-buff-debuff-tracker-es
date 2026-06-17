@@ -1,25 +1,25 @@
 title: $:/plugins/linonetwo/status-bar/language/zh-Hans/Schema
 type: application/x-tiddler-dictionary
 
-StatusBar/Schema/Icon/Title: 图标
-StatusBar/Schema/Icon/Description: 图标维基文本，可以使用嵌入来引用其它图片条目，或直接使用 Emoji
-StatusBar/Schema/Description/Title: 描述
-StatusBar/Schema/Description/Description: 鼠标悬浮时的提示文本
-StatusBar/Schema/Badge/Title: 徽章
-StatusBar/Schema/Badge/Description: 图标右上角的徽章文本，可以用来放置数字等
-StatusBar/Schema/BadgeBgColor/Title: 徽章背景颜色
-StatusBar/Schema/BadgeBgColor/Description: 徽章的背景颜色，支持 CSS 颜色值
-StatusBar/Schema/Click/Title: 点击动作
-StatusBar/Schema/Click/Description: 用户左键点击图标的行为。可以是动作微件或条目名称。如果未指定但项目本身是条目，则打开该条目。
+StatusBar/Schema/Icon/Title: Iconos
+StatusBar/Schema/Icon/Description: Texto wiki de iconos, puede usar la incrustacion para hacer referencia a otras entradas de imagenes o usarlo directamente Emoji
+StatusBar/Schema/Description/Title: Descripcion
+StatusBar/Schema/Description/Description: Mensaje de texto cuando el mouse esta sobre el cursor
+StatusBar/Schema/Badge/Title: Insignia
+StatusBar/Schema/Badge/Description: El texto de la insignia en la esquina superior derecha del icono se puede usar para colocar numeros, etc.
+StatusBar/Schema/BadgeBgColor/Title: Color de fondo de la insignia
+StatusBar/Schema/BadgeBgColor/Description: Color de fondo de la insignia, soporte CSS Valores de color
+StatusBar/Schema/Click/Title: Haga clic en accion
+StatusBar/Schema/Click/Description: El comportamiento del clic izquierdo del usuario en el icono. Puede ser un widget de accion o un nombre de elemento. Si no se especifica pero el elemento en si es una entrada, abra la entrada。
 
-StatusBar/Schema/ShiftClick/Title: Shift 点击动作
-StatusBar/Schema/ShiftClick/Description: 用户按下 Shift 键点击图标的行为。可以是动作微件或条目名称。如果未指定但点击动作是条目，则打开该条目。
+StatusBar/Schema/ShiftClick/Title: Shift Haga clic en accion
+StatusBar/Schema/ShiftClick/Description: El usuario presiona Shift El comportamiento de hacer clic en el icono. Puede ser un widget de accion o un nombre de elemento. Si no se especifica pero la accion de hacer clic es un elemento, abre el elemento。
 
-StatusBar/Schema/CtrlClick/Title: Ctrl 点击动作
-StatusBar/Schema/CtrlClick/Description: 用户按下 Ctrl 键点击图标的行为。默认会从状态栏移除。可以用动作微件覆盖。
+StatusBar/Schema/CtrlClick/Title: Ctrl Haga clic en accion
+StatusBar/Schema/CtrlClick/Description: El usuario presiona Ctrl El comportamiento de hacer clic en el icono. Eliminado de la barra de estado de forma predeterminada. Se puede anular con widgets de accion。
 
-StatusBar/Schema/AltClick/Title: Alt 点击动作
-StatusBar/Schema/AltClick/Description: 用户按下 Alt 键点击图标的行为。可以是动作微件或条目名称。如果未指定但点击动作是条目，则打开该条目。
+StatusBar/Schema/AltClick/Title: Alt Haga clic en accion
+StatusBar/Schema/AltClick/Description: El usuario presiona Alt El comportamiento de hacer clic en el icono. Puede ser un widget de accion o un nombre de elemento. Si no se especifica pero la accion de hacer clic es un elemento, abre el elemento。
 
-StatusBar/Schema/Priority/Title: 优先级
-StatusBar/Schema/Priority/Description: 条目在状态栏中的排序优先级，数字越小越靠前
+StatusBar/Schema/Priority/Title: Prioridad
+StatusBar/Schema/Priority/Description: La prioridad de clasificacion de los elementos en la barra de estado, cuanto menor sea el numero, mayor sera.

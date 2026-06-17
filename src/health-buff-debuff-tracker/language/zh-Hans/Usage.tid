@@ -3,19 +3,19 @@ type: text/vnd.tiddlywiki
 
 \procedure lingo-base() $:/plugins/linonetwo/health-buff-debuff-tracker/language/
 
-!!基本用法
+!!Uso basico
 
-# 提供<<lingo ShortName>>布局，使用 `ctrl+shift+L` 切换到该视图
-## 或使用侧边栏上的<<lingo ShortName $:/plugins/linonetwo/simple-layout-launcher/language/>>等布局启动器打开它
-# 打开布局后，顶部有一些按钮
-## 左边是一系列添加按钮，点击后会跳转回默认布局，并添加新的条目
-## 右边是直接跳转回默认布局的按钮
-# 等你添加了一些条目后，布局底部会显示一个数据表格，列出你添加的条目
-## 点击表格里的条目标题，会跳转回默认布局，并打开该条目
+# Proporcionar<<lingo ShortName>>Diseno, uso `ctrl+shift+L` Cambiar a esta vista
+## O utilice el<<lingo ShortName $:/plugins/linonetwo/simple-layout-launcher/language/>>Espere a que el iniciador de diseno lo abra.
+# Despues de abrir el diseno, hay algunos botones en la parte superior.
+## A la izquierda hay una serie de botones para agregar. Despues de hacer clic, volvera al diseno predeterminado y agregara nuevos elementos.
+## A la derecha hay un boton que regresa directamente al diseno predeterminado.
+# Despues de agregar algunos elementos, se mostrara una tabla de datos en la parte inferior del diseno que enumera los elementos que agrego.
+## Haga clic en el titulo de la entrada en la tabla para volver al diseno predeterminado y abrir la entrada.
 
-!! 标签
+!! Etiquetas
 
-以下是本条目里用到的，用于表明条目记录了症状或健康情况的标签，添加按钮其实就是创建了带有这些标签的条目：
+Las siguientes son las etiquetas utilizadas en esta entrada para indicar que la entrada registra sintomas o condiciones de salud. Agregar un boton en realidad crea una entrada con estas etiquetas.：
 
 <$list filter="[[$:/plugins/linonetwo/health-buff-debuff-tracker/tags/debuff]] [[$:/plugins/linonetwo/health-buff-debuff-tracker/tags/buff]] [[$:/plugins/linonetwo/health-buff-debuff-tracker/tags/medicine]] [[$:/plugins/linonetwo/health-buff-debuff-tracker/tags/condition]]">
 
@@ -23,6 +23,6 @@ type: text/vnd.tiddlywiki
 
 </$list>
 
-你可以通过给任意条目添加 [[$:/TraitTag/OPMI/Status]] 标签来制作你自己的[ext[超级标签|https://github.com/tiddly-gittly/super-tag/]]。
+Puedes agregar [[$:/TraitTag/OPMI/Status]] Etiquetas para hacer las tuyas[ext[Super etiqueta|https://github.com/tiddly-gittly/super-tag/]]。
 
-病情状态：在就诊过程中给出诊断时的状态（入院诊断、最终诊断等），包括诊断是否基于实验室结果确定，是否是排除性诊断，或者是否为初步诊断等。
+Estado de condicion: El estado en el que se da el diagnostico durante el proceso de tratamiento (diagnostico de ingreso, diagnostico final, etc.), incluyendo si el diagnostico se basa en resultados de laboratorio, si es un diagnostico excluyente, si es un diagnostico preliminar, etc.。

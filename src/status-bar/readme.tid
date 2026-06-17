@@ -6,44 +6,44 @@ title: $:/plugins/linonetwo/status-bar/readme
 
 <<lingo Description>>
 
-!! 如何使用
+!! Como utilizar
 
-添加 `$:/Tags/StatusBar/Item` 标签到你想要在状态栏中显示的条目上，它就会使用 icon 字段展示图片，并用 description 或 caption 字段作为鼠标悬浮时展示的工具提示。
+Agregar `$:/Tags/StatusBar/Item` Etiqueta el elemento que deseas mostrar en la barra de estado y utilizara icon Muestre imagenes en campos y use description o caption Los campos sirven como informacion sobre herramientas que se muestra cuando se pasa el mouse.。
 
-常见用途：
+Usos comunes：
 
-# 健康状况：对比较需要关注治疗的症状，将它添加到状态栏上提醒自己修改生活习惯以便提早康复；
-#* 对于需要定期服药的症状、对于需要定期复查的症状，通过定时器定期添加 `$:/Tags/StatusBar/Item` 标签，从而让它定期展示到状态栏上。
-# 番茄钟：提示进行中的倒计时、正计时，左键点击打开计时器。
-# 游戏化奖励：提示运行中的奖励，一般也是倒计时，例如表示「玩一小时游戏」的进行时。
+# Estado de salud: para los sintomas que requieren mas atencion y tratamiento, agreguelos a la barra de estado para recordar que debe modificar sus habitos de vida para una recuperacion temprana.；
+#* Para los sintomas que requieren medicacion regular y los sintomas que requieren revision regular, agreguelos regularmente a traves del temporizador. `$:/Tags/StatusBar/Item` Etiqueta para que pueda mostrarse en la barra de estado regularmente.。
+# Pomodoro: indica la cuenta regresiva en curso y la cuenta regresiva, haga clic izquierdo para abrir el temporizador。
+# Recompensas de gamificacion: indica la ejecucion de recompensas, normalmente una cuenta regresiva, por ejemplo.「Juega durante una hora.」El tiempo continuo de。
 
-`Ctrl` 键加左键点击一个图标，可以去掉它在状态栏中的显示（通过去掉条目上的 `$:/Tags/StatusBar/Item` 标签）。
+`Ctrl` Presione y haga clic izquierdo en un icono para eliminar su visualizacion en la barra de estado (eliminando el `$:/Tags/StatusBar/Item` Etiquetas）。
 
-!! 示例
+!! Ejemplo
 
-要添加预置的示例条目，请访问控制面板（齿轮图标）中的"RPG风格状态栏"设置页面。
+Para agregar una entrada de muestra predisenada, acceda al"RPGBarra de estado de estilo"Pagina de configuracion。
 
-!! 配置
+!! Configuracion
 
-在控制面板中的"RPG风格状态栏"部分可以进行以下配置：
+En el panel de control"RPGBarra de estado de estilo"Se pueden realizar algunas de las siguientes configuraciones：
 
-* 选择状态栏显示位置（顶部、侧边栏或两者）
-* 设置是否自动隐藏空状态栏
-* 添加预置的示例条目
+* Elija donde aparecera la barra de estado (arriba, barra lateral o ambas).）
+* Establezca si desea ocultar automaticamente la barra de estado vacia
+* Agregue entradas de muestra preestablecidas
 
-!! 开发者高级设置
+!! Configuracion avanzada del desarrollador
 
-!!! 字段
+!!! Campos
 
-* `icon`：图标维基文本，可以使用嵌入来引用其它图片条目，或直接使用 Emoji
-* `description`：鼠标悬浮时的提示文本，如果未填则会使用 `caption` 字段
-* `@status-bar/badge`：图标右上角的徽章文本，可以用来放置数字等
-* `@status-bar/badgeBgColor`：徽章的背景颜色，支持 CSS 颜色值
-* `@status-bar/click`：用户左键点击图标的行为。应该放动作微件。
-* `@status-bar/shiftClick`：用户按下 `Shift` 键时，点击图标的行为。应该放动作微件。
-* `@status-bar/ctrlClick`：用户按下 `Ctrl` 键时，点击图标的行为。应该放动作微件。
-* `@status-bar/altClick`：用户按下 `Alt` 键时，点击图标的行为。应该放动作微件。
+* `icon`：Texto wiki de iconos, puede usar la incrustacion para hacer referencia a otras entradas de imagenes o usarlo directamente Emoji
+* `description`：Mensaje de texto cuando el mouse esta sobre el cursor. Si no se cumplimenta se utilizara. `caption` Campos
+* `@status-bar/badge`：El texto de la insignia en la esquina superior derecha del icono se puede usar para colocar numeros, etc.
+* `@status-bar/badgeBgColor`：Color de fondo de la insignia, soporte CSS Valores de color
+* `@status-bar/click`：El comportamiento del clic izquierdo del usuario en el icono. Se debe colocar el widget de accion.。
+* `@status-bar/shiftClick`：El usuario presiona `Shift` Comportamiento al hacer clic en el icono cuando se presiona la tecla. Se debe colocar el widget de accion.。
+* `@status-bar/ctrlClick`：El usuario presiona `Ctrl` Comportamiento al hacer clic en el icono cuando se presiona la tecla. Se debe colocar el widget de accion.。
+* `@status-bar/altClick`：El usuario presiona `Alt` Comportamiento al hacer clic en el icono cuando se presiona la tecla. Se debe colocar el widget de accion.。
 
-!!! 更多帮助
+!!! Mas ayuda
 
-有关更多使用信息，请参阅 [[状态栏使用帮助|$:/plugins/linonetwo/status-bar/help]]。
+Para obtener mas informacion de uso, consulte [[Ayuda para el uso de la barra de estado|$:/plugins/linonetwo/status-bar/help]]。

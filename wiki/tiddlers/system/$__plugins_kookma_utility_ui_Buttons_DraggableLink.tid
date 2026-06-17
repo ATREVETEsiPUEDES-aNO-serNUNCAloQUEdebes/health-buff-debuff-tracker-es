@@ -1,9 +1,9 @@
 caption: {{$:/core/images/link}} {{$:/language/Buttons/DraggableHandle/Caption}}
 created: 20230802131341436
-creator: 林一二
+creator: Lin Yier
 description: {{$:/language/Buttons/DraggableHandle/Hint}}
 modified: 20230802131341436
-modifier: 林一二
+modifier: Lin Yier
 tags: $:/tags/ViewToolbar
 title: $:/plugins/kookma/utility/ui/Buttons/DraggableLink
 type: text/vnd.tiddlywiki

@@ -6,7 +6,7 @@ tags: $:/tags/Stylesheet
 <$let customStylesEnabled={{{ [<config-base>addsuffix[customStyles]get[text]] }}}>
 
 <$list filter="[<customStylesEnabled>match[yes]]" variable="ignore">
-/* 自定义样式配置启用 */
+/* Configuracion de estilo personalizado habilitada */
 .tc-status-bar {
   display: flex;
   flex-wrap: wrap;

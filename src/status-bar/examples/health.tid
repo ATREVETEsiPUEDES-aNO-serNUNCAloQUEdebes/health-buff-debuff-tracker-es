@@ -1,12 +1,12 @@
 title: $:/plugins/linonetwo/status-bar/examples/health
 tags: $:/Tags/StatusBar/Item
 icon: 🤒
-description: 感冒中，多喝热水
+description: Cuando estes resfriado, bebe mas agua caliente.
 @status-bar/badge: 2
 @status-bar/badgeBgColor: #ff5555
 
-这是一个健康状态的示例。当你生病时，可以将类似的条目添加到状态栏，提醒自己注意健康和修改生活习惯。
+Este es un ejemplo de estado de salud. Cuando este enfermo, puede agregar entradas similares a la barra de estado para recordar que debe prestar atencion a su salud y modificar sus habitos de vida.。
 
-徽章上的数字 "2" 表示预计还需要2天才能康复。
+Numeros en la insignia "2" Indica que se espera que se necesite mas2Se necesita genio para recuperarse。
 
-点击此图标会导航到"感冒记录"条目（如果它存在的话）。
+Al hacer clic en este icono se navegara a"Registros frios"La entrada (si existe)）。

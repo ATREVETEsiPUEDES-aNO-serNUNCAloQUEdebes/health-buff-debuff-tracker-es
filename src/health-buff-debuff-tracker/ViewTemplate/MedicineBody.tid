@@ -8,13 +8,13 @@ title: $:/plugins/linonetwo/health-buff-debuff-tracker/ViewTemplate/MedicineBody
 [
   {
     field: "title",
-    title: "时间戳/键",
+    title: "Marca de tiempo/Clave",
     width: 220,
     sort: "number"
   },
   {
     field: "value",
-    title: "数据（逗号分隔）",
+    title: "Datos (separados por comas）",
     width: "auto"
   }
 ]

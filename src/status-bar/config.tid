@@ -10,63 +10,63 @@ caption: {{$:/plugins/linonetwo/status-bar/language/zh-Hans/ShortName}}
 
 <<lingo Configs/Description>>
 
-!! 基础配置
+!! Configuracion basica
 
-|!设置项|!选项|
-|<<lingo Config/ShowInSidebar>>|<$checkbox tiddler=<<config-base>> field="showInSidebar" checked="yes" unchecked="no" default="yes"> 启用 </$checkbox>|
-|<<lingo Config/AutoHideEmpty>>|<$checkbox tiddler=<<config-base>> field="autoHideEmpty" checked="yes" unchecked="no" default="yes"> 启用 </$checkbox>|
-|自定义样式|<$checkbox tiddler=<<config-base>> field="customStyles" checked="yes" unchecked="no" default="no"> 启用 </$checkbox>|
-|项目排序字段|<$select tiddler=<<config-base>> field="orderByField" default="list-order">
-<option value="list-order">手动排序 (list-order)</option>
-<option value="title">标题 (title)</option>
-<option value="created">创建时间 (created)</option>
-<option value="modified">修改时间 (modified)</option>
-<option value="@status-bar/priority">优先级 (@status-bar/priority)</option>
+|!Configuracion de elementos|!Opciones|
+|<<lingo Config/ShowInSidebar>>|<$checkbox tiddler=<<config-base>> field="showInSidebar" checked="yes" unchecked="no" default="yes"> Habilitar </$checkbox>|
+|<<lingo Config/AutoHideEmpty>>|<$checkbox tiddler=<<config-base>> field="autoHideEmpty" checked="yes" unchecked="no" default="yes"> Habilitar </$checkbox>|
+|Estilos personalizados|<$checkbox tiddler=<<config-base>> field="customStyles" checked="yes" unchecked="no" default="no"> Habilitar </$checkbox>|
+|Campo de clasificacion de proyectos|<$select tiddler=<<config-base>> field="orderByField" default="list-order">
+<option value="list-order">Clasificacion manual (list-order)</option>
+<option value="title">Titulo (title)</option>
+<option value="created">Tiempo de creacion (created)</option>
+<option value="modified">Tiempo de modificacion (modified)</option>
+<option value="@status-bar/priority">Prioridad (@status-bar/priority)</option>
 </$select>|
 
-!! 状态栏项目配置
+!! Configuracion de elementos de la barra de estado
 
-状态栏项目可以通过两种方式配置：
+Los elementos de la barra de estado se pueden configurar de dos maneras：
 
-1. 使用超级标签的自动表单（需要安装 super-tag 插件），只需添加 `$:/Tags/StatusBar/Item` 标签到条目上，即可自动显示所有配置项
-2. 手动编辑条目，设置相应的字段
+1. Formularios automaticos usando super etiquetas (requiere instalacion super-tag complemento), simplemente agregue `$:/Tags/StatusBar/Item` Etiquete una entrada para mostrar automaticamente todos los elementos de configuracion.
+2. Edite manualmente las entradas y establezca los campos correspondientes.
 
-状态栏插件依赖于超级标签插件（super-tag）才能显示结构化编辑表单。如果没有安装此插件，仍然可以手动编辑字段。
+El complemento de la barra de estado depende del complemento de super etiqueta（super-tag）para mostrar el formulario de edicion estructurado. Si no tienes este complemento instalado, aun puedes editar los campos manualmente。
 
-!! 示例状态项
+!! Elementos de estado de muestra
 
 <$button class="tc-btn-invisible tc-tiddlylink">
-<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/health" tags="$:/Tags/StatusBar/Item" icon="🤒" description="感冒中，多喝热水" @status-bar/badge="2" @status-bar/badgeBgColor="#ff5555" @status-bar/click="<$action-navigate $to='感冒记录'/>"/>
+<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/health" tags="$:/Tags/StatusBar/Item" icon="🤒" description="Cuando estes resfriado, bebe mas agua caliente." @status-bar/badge="2" @status-bar/badgeBgColor="#ff5555" @status-bar/click="<$action-navigate $to='Registros frios'/>"/>
 <$action-navigate $to="$:/plugins/linonetwo/status-bar/examples/health"/>
 {{$:/core/images/new-button}} <<lingo Examples/Health>>
 </$button>
 
 <$button class="tc-btn-invisible tc-tiddlylink">
-<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/timer" tags="$:/Tags/StatusBar/Item" icon="⏱️" description="番茄钟 - 25:00" @status-bar/badge="25" @status-bar/badgeBgColor="#55aa55" @status-bar/click="<$action-navigate $to='番茄钟'/>"/>
+<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/timer" tags="$:/Tags/StatusBar/Item" icon="⏱️" description="Pomodoro - 25:00" @status-bar/badge="25" @status-bar/badgeBgColor="#55aa55" @status-bar/click="<$action-navigate $to='Pomodoro'/>"/>
 <$action-navigate $to="$:/plugins/linonetwo/status-bar/examples/timer"/>
 {{$:/core/images/new-button}} <<lingo Examples/Timer>>
 </$button>
 
 <$button class="tc-btn-invisible tc-tiddlylink">
-<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/game" tags="$:/Tags/StatusBar/Item" icon="🎮" description="游戏时间 - 剩余30分钟" @status-bar/badge="30" @status-bar/badgeBgColor="#5555aa" @status-bar/click="<$action-navigate $to='游戏奖励'/>"/>
+<$action-setfield $tiddler="$:/plugins/linonetwo/status-bar/examples/game" tags="$:/Tags/StatusBar/Item" icon="🎮" description="Tiempo de juego - Resto30minutos" @status-bar/badge="30" @status-bar/badgeBgColor="#5555aa" @status-bar/click="<$action-navigate $to='Recompensas del juego'/>"/>
 <$action-navigate $to="$:/plugins/linonetwo/status-bar/examples/game"/>
 {{$:/core/images/new-button}} <<lingo Examples/Game>>
 </$button>
 
-!! 自定义状态栏位置
+!! Personaliza la posicion de la barra de estado
 
 <$radio tiddler=<<config-base>> field="position" value="top"> <<lingo Config/Position/Top>> </$radio>
 <$radio tiddler=<<config-base>> field="position" value="sidebar"> <<lingo Config/Position/Sidebar>> </$radio>
 <$radio tiddler=<<config-base>> field="position" value="both"> <<lingo Config/Position/Both>> </$radio>
 
 <$reveal type="match" state=<<config-base>> index="customStyles" text="yes">
-!! 自定义样式设置
+!! Configuracion de estilo personalizado
 
-|!样式设置|!值|
-|图标大小|<$edit-text tiddler=<<config-base>> index="customStyleValues/icon-size" default="32px"/>|
-|图标间距|<$edit-text tiddler=<<config-base>> index="customStyleValues/icon-gap" default="0.5em"/>|
-|背景透明度|<$edit-text tiddler=<<config-base>> index="customStyleValues/background-opacity" default="1"/>|
-|背景模糊|<$edit-text tiddler=<<config-base>> index="customStyleValues/background-blur" default="0px"/>|
-|圆角大小|<$edit-text tiddler=<<config-base>> index="customStyleValues/border-radius" default="4px"/>|
-|动画效果|<$radio tiddler=<<config-base>> index="customStyleValues/animation" value="yes"> 启用 </$radio><$radio tiddler=<<config-base>> index="customStyleValues/animation" value="no"> 禁用 </$radio>|
+|!Estilo|!Valor|
+|Tamano del icono|<$edit-text tiddler=<<config-base>> index="customStyleValues/icon-size" default="32px"/>|
+|Espaciado de iconos|<$edit-text tiddler=<<config-base>> index="customStyleValues/icon-gap" default="0.5em"/>|
+|Transparencia de fondo|<$edit-text tiddler=<<config-base>> index="customStyleValues/background-opacity" default="1"/>|
+|Fondo borroso|<$edit-text tiddler=<<config-base>> index="customStyleValues/background-blur" default="0px"/>|
+|Tamano del filete|<$edit-text tiddler=<<config-base>> index="customStyleValues/border-radius" default="4px"/>|
+|efectos de animacion|<$radio tiddler=<<config-base>> index="customStyleValues/animation" value="yes"> Habilitar </$radio><$radio tiddler=<<config-base>> index="customStyleValues/animation" value="no"> Desactivar </$radio>|
 </$reveal>

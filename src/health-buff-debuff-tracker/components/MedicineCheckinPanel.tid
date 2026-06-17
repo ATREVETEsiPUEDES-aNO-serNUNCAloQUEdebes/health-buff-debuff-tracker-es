@@ -44,7 +44,7 @@
                   <$text text={{{ [<medicineTitle>get[caption]] :else[<medicineTitle>] }}}/>
                 </strong>
                 <span class="health-buff-debuff-tracker-checkin-count">
-                  <$text text=<<todayCount>>/> 次
+                  <$text text=<<todayCount>>/> veces
                 </span>
                 <$button class="health-buff-debuff-tracker-btn-small">
                   <$action-navigate $to=<<logTitle>>/>

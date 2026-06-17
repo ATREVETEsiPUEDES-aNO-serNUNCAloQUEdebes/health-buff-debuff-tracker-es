@@ -68,7 +68,7 @@ title: $:/plugins/linonetwo/status-bar/ui/status-bar
 \end
 
 \procedure status-bar()
-  <!-- 如果自动隐藏空状态栏且有状态项，则显示 -->
+  <!-- Si la barra de estado vacia se oculta automaticamente y hay elementos de estado, se muestra -->
   <%if [<config-base>addsuffix[autoHideEmpty]get[text]match[yes]] %>
     <%if [all[tiddlers+shadows]tag[$:/Tags/StatusBar/Item]count[]compare:number:gt[0]] +[count[]!match[2]] %>
       <div class="tc-status-bar">
@@ -76,7 +76,7 @@ title: $:/plugins/linonetwo/status-bar/ui/status-bar
       </div>
     <%endif%>
   <%else%>
-    <!-- 如果不自动隐藏空状态栏，则无论如何都显示 -->
+    <!-- Si la barra de estado vacia no se oculta automaticamente, se muestra de todos modos -->
     <div class="tc-status-bar">
       <<render-status-bar-items>>
     </div>

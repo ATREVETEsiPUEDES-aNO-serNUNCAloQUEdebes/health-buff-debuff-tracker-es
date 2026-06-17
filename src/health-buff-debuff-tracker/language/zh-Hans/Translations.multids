@@ -1,87 +1,87 @@
 ﻿title: $:/plugins/linonetwo/health-buff-debuff-tracker/language/zh-Hans/
 
-Name: 健康增益和减益追踪器
-ShortName: 健康记录
-Description: 记录各种健康问题、药物使用情况和恢复过程。你的个人健康存档。
-SetEnded: 设为结束
-Medicine: 药物
-Medicine/Description: 您正在服用的，与某个增益、减益、身体状态相关的药物。可以通过在增益条目等的正文添加链接的形式关联起来。
-BodyCondition: 身体状态
-BodyCondition/Description: 「血压」或「体重」等正常情况
-AddNewItem: 添加新项目
-Buff: 增益
-Buff/Description: 对你的身体或健康有益的事情，如「经常锻炼」、「机械腿」、「激光近视手术」或「朋友的鼓励」。
-DeBuff: 减益
-DeBuff/Description: 诸如「感冒」、「脱发」、「断腿」等不好的事情。
-HealthRecordSummary: 健康记录摘要
-BackToStandardLayout: 返回标准布局
-Navigation: 导航
+Name: Rastreador de ganancias y desventajas de salud
+ShortName: Registros sanitarios
+Description: Documentar diversos problemas de salud, uso de medicamentos y procesos de recuperacion. Su registro personal de salud。
+SetEnded: Listo para finalizar
+Medicine: Drogas
+Medicine/Description: El medicamento que esta tomando esta relacionado con una determinada ganancia, desventaja o estado fisico. Se puede asociar agregando un enlace en el cuerpo del elemento de ganancia, etc.。
+BodyCondition: Condicion fisica
+BodyCondition/Description: 「Presion arterial」o「peso」Espere a que las condiciones sean normales.
+AddNewItem: Agregar nuevos elementos
+Buff: Ganar
+Buff/Description: Cosas que son buenas para tu cuerpo o tu salud, como「Haga ejercicio con regularidad」、「Piernas roboticas」、「Cirugia laser de miopia」o「Aliento de amigos」。
+DeBuff: Desventaja
+DeBuff/Description: Como por ejemplo「Frio」、「Caida del cabello」、「Pierna rota」Esperando que suceda algo malo。
+HealthRecordSummary: Resumen del historial medico
+BackToStandardLayout: Volver al diseno estandar
+Navigation: Navegacion
 
-MedicineCheckin: 药物打卡
-MedicineCheckinHeatmap: 最近一周药物打卡趋势
-MedicineCheckinDetails: 打卡详情
-TodayMedicineCheckinDetails: 今日打卡详情
-MedicineCheckinHistoryHint: 点击折线或下方按钮可查看对应药物历史
-MedicineCheckinHistory: 打卡历史明细
-OpenHistory: 打开历史记录
-CloseHistory: 收起历史记录
-TotalCheckins: 总打卡次数
-ActiveDays: 活跃天数
-BodyMapSectionTitle: 影响的身体部位
-AggregateBodyMapTitle: 身体部位概览
-EmptyBodyMap: （暂无受影响的身体部位）
-LastCheckin: 最近一次打卡
-NoMedicineCheckinHistory: 还没有打卡历史记录
-ShowDetails: 显示详情
-EmptyDeBuff: 暂无相关减益
-EmptyBuff: 暂无相关增益
-EmptyBodyCondition: 暂无身体状态
-EmptyMedicine: 暂无药物记录
-MedicineLogKeyColumn: 时间戳/键值
-MedicineLogValueColumn: 日志数据（逗号分隔）
-MedicineCheckinTrend: 近四周打卡趋势
-Configs/Caption: 状态追踪器
-Configs/Description: 自定义插件行为，让健康增减益追踪器为您提供最佳服务。
-Configs/BodyMap/Caption: 身体映射图 (Body Map)
-Configs/BodyMap/Debug/Caption: 开启调试模式
-Configs/BodyMap/Debug/Description: 会常驻灰底显示隐形的所有多边形区域，用于调试坐标。
-Configs/BodyMap/Editor/Caption: 身体图节点编辑器
-Configs/BodyMap/Editor/OpenButton: 打开编辑器
-Configs/BodyMap/Editor/Description: 打开可拖拽微调的身体区域编辑器，并导出可直接粘贴的 Meta 字段。
+MedicineCheckin: Registro de medicamentos
+MedicineCheckinHeatmap: Tendencias en el control de drogas durante la ultima semana
+MedicineCheckinDetails: Detalles del check-in
+TodayMedicineCheckinDetails: Detalles del check-in de hoy
+MedicineCheckinHistoryHint: Haga clic en la polilinea o en el boton a continuacion para ver el historial de medicamentos correspondiente
+MedicineCheckinHistory: Detalles del historial de check-in
+OpenHistory: Historia abierta
+CloseHistory: Cerrar historial
+TotalCheckins: Numero total de pinchados
+ActiveDays: Dias activos
+BodyMapSectionTitle: Partes del cuerpo afectadas
+AggregateBodyMapTitle: Descripcion general de las partes del cuerpo
+EmptyBodyMap: （Aun no hay partes del cuerpo afectadas）
+LastCheckin: Ultimo check-in
+NoMedicineCheckinHistory: Aun no hay historial de check-in
+ShowDetails: Mostrar detalles
+EmptyDeBuff: Aun no hay desventajas relevantes
+EmptyBuff: Aun no hay ganancias relacionadas
+EmptyBodyCondition: Aun no tengo condicion fisica
+EmptyMedicine: Aun no hay registros de drogas
+MedicineLogKeyColumn: Marca de tiempo/Valor clave
+MedicineLogValueColumn: Datos de registro (separados por comas）
+MedicineCheckinTrend: Tendencias de check-in en las ultimas cuatro semanas
+Configs/Caption: Rastreador de estado
+Configs/Description: Personalice el comportamiento del complemento para permitir que el rastreador de perdidas y ganancias de salud le brinde el mejor servicio。
+Configs/BodyMap/Caption: Mapeo corporal (Body Map)
+Configs/BodyMap/Debug/Caption: Active el modo de depuracion
+Configs/BodyMap/Debug/Description: Todas las areas poligonales que son invisibles se mostraran sobre un fondo gris para depurar coordenadas.。
+Configs/BodyMap/Editor/Caption: Editor de nodos del grafico corporal
+Configs/BodyMap/Editor/OpenButton: Abre el editor.
+Configs/BodyMap/Editor/Description: Abra el editor del area del cuerpo que se puede arrastrar y ajustar, y exporte el editor del area del cuerpo que se puede pegar directamente. Meta Campos。
 
-BodyPart/69536005: 头部
-BodyPart/81745001: 右眼
-BodyPart/81745001L: 左眼
-BodyPart/45206002: 鼻子
-BodyPart/123851003: 嘴巴
-BodyPart/117590005: 右耳
-BodyPart/117590005L: 左耳
-BodyPart/45048000: 颈部
-BodyPart/16982005: 右肩
-BodyPart/16982005L: 左肩
-BodyPart/51185008: 胸部
-BodyPart/53120007: 右上臂
-BodyPart/53120007L: 左上臂
-BodyPart/76248009: 右肘
-BodyPart/76248009L: 左肘
-BodyPart/14975008: 右前臂
-BodyPart/14975008L: 左前臂
-BodyPart/8205005: 右腕
-BodyPart/8205005L: 左腕
-BodyPart/85562004: 右手
-BodyPart/85562004L: 左手
-BodyPart/113345001: 腹部
-BodyPart/12921003: 骨盆
-BodyPart/11207009: 右大腿
-BodyPart/11207009L: 左大腿
-BodyPart/72696002: 右膝
-BodyPart/72696002L: 左膝
-BodyPart/30021000: 右小腿
-BodyPart/30021000L: 左小腿
-BodyPart/7569003: 右踝
-BodyPart/7569003L: 左踝
-BodyPart/56459004: 右脚
-BodyPart/56459004L: 左脚
+BodyPart/69536005: cabeza
+BodyPart/81745001: Ojo derecho
+BodyPart/81745001L: Ojo izquierdo
+BodyPart/45206002: nariz
+BodyPart/123851003: boca
+BodyPart/117590005: oreja derecha
+BodyPart/117590005L: Oido izquierdo
+BodyPart/45048000: cuello
+BodyPart/16982005: hombro derecho
+BodyPart/16982005L: hombro izquierdo
+BodyPart/51185008: Pecho
+BodyPart/53120007: Brazo derecho
+BodyPart/53120007L: Brazo izquierdo
+BodyPart/76248009: Codo derecho
+BodyPart/76248009L: Codo izquierdo
+BodyPart/14975008: antebrazo derecho
+BodyPart/14975008L: Antebrazo izquierdo
+BodyPart/8205005: muneca derecha
+BodyPart/8205005L: Muneca izquierda
+BodyPart/85562004: mano derecha
+BodyPart/85562004L: mano izquierda
+BodyPart/113345001: abdomen
+BodyPart/12921003: Pelvis
+BodyPart/11207009: muslo derecho
+BodyPart/11207009L: muslo izquierdo
+BodyPart/72696002: rodilla derecha
+BodyPart/72696002L: rodilla izquierda
+BodyPart/30021000: pantorrilla derecha
+BodyPart/30021000L: Pantorrilla izquierda
+BodyPart/7569003: tobillo derecho
+BodyPart/7569003L: Tobillo izquierdo
+BodyPart/56459004: pie derecho
+BodyPart/56459004L: Pie izquierdo
 BodyPartSeparator: 、
-BodyParts: 身体部位
-Columns/BodyParts: 影响部位
+BodyParts: Partes del cuerpo
+Columns/BodyParts: Partes afectadas

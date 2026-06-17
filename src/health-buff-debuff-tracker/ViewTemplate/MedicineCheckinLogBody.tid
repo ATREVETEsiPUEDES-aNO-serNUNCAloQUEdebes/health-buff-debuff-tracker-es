@@ -8,18 +8,18 @@ title: $:/plugins/linonetwo/health-buff-debuff-tracker/ViewTemplate/MedicineChec
 [
   {
     "field": "title",
-    "title": "日期",
+    "title": "Fecha",
     "width": 200,
     "sort": true
   },
   {
     "field": "value",
-    "title": "数据",
+    "title": "Datos",
     "width": "auto"
   },
   {
     "field": "count",
-    "title": "次数",
+    "title": "tiempos",
     "width": 80,
     "sort": "number"
   }

@@ -6,28 +6,28 @@ type: text/vnd.tiddlywiki
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 	<$list filter="[<lang>search[zh]]">
 
-属性 `opmi_medicalConditionStatus` 来自[ext[OPMI_0000533|http://purl.obolibrary.org/obo/OPMI_0000533]]。这个属性描述了在医学诊断过程中，疾病或健康状况的状态或阶段。
+Propiedades `opmi_medicalConditionStatus` de[ext[OPMI_0000533|http://purl.obolibrary.org/obo/OPMI_0000533]]。Este atributo describe el estado o etapa de una enfermedad o condicion de salud durante el proceso de diagnostico medico.。
 
-下面是此字段可选的各个值的中文解释：
+La siguiente es la explicacion en chino de cada valor opcional en este campo.：
 
-# ''admissionDiagnosis'': 入院诊断 - 患者入院时做出的初步诊断。
-# ''causeOfDeath'': 死因 - 导致患者死亡的疾病或状况。
-# ''conditionToBeDiagnosedByProcedure'': 待手术诊断的疾病或状况 - 需要手术或特定医疗程序来确认的疾病或状况。
-# ''confirmedDiagnosis'': 已确认诊断 - 经过检查和分析后确认的诊断。
-# ''contributoryCauseOfDeath'': 死亡的次要原因 - 虽然不是直接导致死亡的原因，但对死亡有所贡献的疾病或状况。
-# ''deathDiagnosis'': 死亡诊断 - 死后确定的疾病或状况。
-# ''dischargeDiagnosis'': 出院诊断 - 患者出院时做出的诊断。
-# ''postoperativeDiagnosis'': 术后诊断 - 手术后做出的诊断。
-# ''preliminaryDiagnosis'': 初步诊断 - 第一次就诊时的临时诊断，可能需要进一步的检查和分析来确认。
-# ''preoperativeDiagnosis'': 术前诊断 - 手术前做出的诊断。
-# ''primaryDiagnosis'': 主要诊断 - 患者主要的健康问题或疾病。
-# ''referralDiagnosis'': 转诊诊断 - 由其他医生或医疗机构转诊时给出的诊断。
-# ''resolvedCondition'': 已解决的状况 - 曾经存在但现已解决的疾病或状况。
-# ''secondaryDiagnosis'': 次要诊断 - 除了主要诊断外的其他健康问题或疾病。
+# ''admissionDiagnosis'': Diagnostico de ingreso - Diagnostico inicial realizado al ingreso del paciente.。
+# ''causeOfDeath'': Causa de la muerte - Enfermedad o condicion que causa la muerte del paciente.。
+# ''conditionToBeDiagnosedByProcedure'': Enfermedad o condicion a diagnosticar quirurgicamente - Enfermedad o condicion que requiere cirugia o procedimientos medicos especificos para confirmar。
+# ''confirmedDiagnosis'': Diagnostico confirmado - Diagnostico confirmado tras examen y analisis.。
+# ''contributoryCauseOfDeath'': Causas secundarias de muerte - Una enfermedad o condicion que contribuye a la muerte aunque no sea la causa directa de la muerte.。
+# ''deathDiagnosis'': Diagnostico de muerte - Enfermedad o condicion determinada despues de la muerte。
+# ''dischargeDiagnosis'': Diagnostico de alta - Diagnostico realizado al alta del paciente。
+# ''postoperativeDiagnosis'': Diagnostico postoperatorio - Diagnostico despues de la cirugia。
+# ''preliminaryDiagnosis'': Diagnostico inicial - Diagnostico provisional en la primera visita, puede requerir examenes y analisis adicionales para confirmar。
+# ''preoperativeDiagnosis'': Diagnostico preoperatorio - Diagnostico realizado antes de la cirugia.。
+# ''primaryDiagnosis'': Diagnostico principal - Principal problema de salud o enfermedad del paciente。
+# ''referralDiagnosis'': Diagnostico de referencia - Diagnostico dado cuando es remitido por otro medico o institucion medica.。
+# ''resolvedCondition'': Situacion resuelta - Una enfermedad o condicion que alguna vez existio pero que ahora se ha resuelto.。
+# ''secondaryDiagnosis'': Diagnostico secundario - Otros problemas de salud o enfermedades ademas del diagnostico primario.。
 
-这些诊断状态帮助医生、护士和其他医疗人员了解患者的健康状况，以便提供合适的医疗护理和建议。
+Estos estados de diagnostico ayudan a los medicos, enfermeras y otro personal medico a comprender el estado de salud del paciente para que puedan brindar atencion y asesoramiento medicos adecuados.。
 
-你可以在条目下方尝试使用这个字段。
+Puedes intentar usar este campo debajo de la entrada.。
 
   </$list>
 	<$list filter="[<lang>!search[zh]]">

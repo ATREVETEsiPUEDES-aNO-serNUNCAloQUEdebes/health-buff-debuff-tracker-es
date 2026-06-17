@@ -2,57 +2,57 @@ title: $:/plugins/linonetwo/health-buff-debuff-tracker/docs/activitylogrecords-f
 tags: $:/tags/Documentation
 caption: activitylogrecords[] Filter
 
-! `activitylogrecords[]` 筛选器
+! `activitylogrecords[]` Filtrar
 
-!! 用途
+!! Proposito
 
-将一个 activity-log tiddler（`application/x-tiddler-dictionary` 类型，标有 `$:/Tags/ActivityLog`）转换为 JSON records 字符串，可直接用于 `$basic-table` 的 `records=` 参数，从而正确显示历史记录表格。
+Pon un activity-log tiddler（`application/x-tiddler-dictionary` Tipo, marcado con `$:/Tags/ActivityLog`）Convertir a JSON records Cuerda, se puede utilizar directamente. `$basic-table` de `records=` Parametros para mostrar correctamente la tabla de historial。
 
-!! 为什么需要这个筛选器
+!! ¿Por que se necesita este filtro?
 
-`$basic-table` 的 `filter=` 参数只能处理 **tiddler 标题**作为行数据——它会对每个结果调用 `getTiddler()` 读取字段值。但 activity-log tiddler 是字典类型，其数据存储在 tiddler 文本中，`[<currentTiddler>indexes[]]` 返回的是键名字符串，不是 tiddler 标题，因此表格无法获取行数据。
+`$basic-table` de `filter=` Los parametros solo se pueden procesar **tiddler Titulo**Como datos de fila: solicita cada resultado. `getTiddler()` Lea el valor del campo. pero activity-log tiddler es un tipo de diccionario, sus datos se almacenan en tiddler En el texto，`[<currentTiddler>indexes[]]` Lo que se devuelve es la cadena del nombre de la clave, no tiddler Titulo, por lo que la tabla no puede obtener datos de fila.。
 
-`activitylogrecords[]` 解析字典内容，将每一条记录展开为带有 `title`、`value`、`count`、`timestamp` 字段的对象，然后序列化为 JSON 字符串供 `records=` 使用。
+`activitylogrecords[]` Analice el contenido del diccionario y expanda cada registro en `title`、`value`、`count`、`timestamp` Luego, el objeto del campo se serializa en JSON Suministro de cuerdas `records=` uso。
 
-!! 输出字段
+!! Campos de salida
 
-每条记录包含：
+Cada registro contiene：
 
-|!字段 |!含义 |
-|`title` |人类可读日期（YYYY-MM-DD 或 YYYY-MM-DD HH:MM） |
-|`key` |字典中的原始键名 |
-|`value` |人类可读值字符串 |
-|`count` |当日/本次的计数（数字） |
-|`timestamp` |ISO 日期字符串，用于排序 |
+|!Campos |!Significado |
+|`title` |Fechas legibles por humanos（YYYY-MM-DD o YYYY-MM-DD HH:MM） |
+|`key` |Nombre de clave original en el diccionario. |
+|`value` |Cadenas de valores legibles por humanos |
+|`count` |El mismo dia/El conteo de este tiempo (numero） |
+|`timestamp` |ISO Cadena de fecha para ordenar |
 
-!! 支持的三种日志格式
+!! Tres formatos de registro admitidos
 
-!!! 1. daily-count（每日计数）
+!!! 1. daily-count（Conteo diario）
 
-* 键格式：`daily-count{unixMs}` — unix 毫秒时间戳
-* 值格式：`"n1,n2,n3"` — 逗号分隔的计数，最新在最后
-* 例：`daily-count1775025207188: 8,3,3`（表示最近 3 天分别记录 8、3、3 次）
+* Formato de clave：`daily-count{unixMs}` — unix Marca de tiempo de milisegundos
+* Formato de valor：`"n1,n2,n3"` — Recuentos separados por comas, el mas reciente al ultimo
+* Ejemplo：`daily-count1775025207188: 8,3,3`（Indica reciente 3 Registre por separado por dia 8、3、3 veces）
 
-!!! 2. date（事件日期）
+!!! 2. date（Fecha del evento）
 
-* 键格式：`"0"`, `"1"`, `"2"`, ...（顺序索引）
-* 值格式：`"{unixMs}"` — 事件发生的时间戳
-* 用途：记录离散事件（如"今天做了某件事"）
+* Formato de clave：`"0"`, `"1"`, `"2"`, ...（Indice secuencial）
+* Formato de valor：`"{unixMs}"` — Marca de tiempo de ocurrencia del evento
+* Proposito: Registrar eventos discretos (como"Hice algo hoy"）
 
-!!! 3. day-interval（天间隔）
+!!! 3. day-interval（intervalo de dias）
 
-* 键格式：`day-interval{unixMs}` — 最后一次记录的时间戳
-* 值格式：`"d1,d2,..."` — 从键时间向前依次间隔的天数
-* 用途：记录周期性事件（如"每隔 N 天服药一次"）
+* Formato de clave：`day-interval{unixMs}` — La marca de tiempo de la ultima hora registrada.
+* Formato de valor：`"d1,d2,..."` — El numero de dias transcurridos desde la hora clave.
+* Proposito: Registrar eventos periodicos (como"Cada N Tome medicamentos una vez al dia."）
 
-!! 用法示例
+!! Ejemplos de uso
 
 ```
 \procedure log-columns()
 [
-  {"field": "title", "title": "日期", "width": 200, "sort": true},
-  {"field": "value", "title": "数据", "width": "auto"},
-  {"field": "count", "title": "次数", "width": 80, "sort": "number"}
+  {"field": "title", "title": "Fecha", "width": 200, "sort": true},
+  {"field": "value", "title": "Datos", "width": "auto"},
+  {"field": "count", "title": "tiempos", "width": 80, "sort": "number"}
 ]
 \end
 
